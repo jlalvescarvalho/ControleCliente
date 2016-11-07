@@ -10,7 +10,7 @@ public class Cliente extends SugarRecord{
     private long _id;
     private long Codigo;
     private String Nome;
-    private String rua;
+    private String Endereco;
     private String Cidade;
 
     public Cliente() {
@@ -40,12 +40,12 @@ public class Cliente extends SugarRecord{
         Nome = nome;
     }
 
-    public String getRua() {
-        return rua;
+    public String getEndereco() {
+        return Endereco;
     }
 
-    public void setRua(String rua) {
-        this.rua = rua;
+    public void setEndereco(String endereco) {
+        this.Endereco = endereco;
     }
 
     public String getCidade() {

@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">ControleCliente</string>
+    <string name="app_name"> ControleCliente </string>
+    <string name="bt_clientes">Clientes</string>
+    <string name="bt_Notas">Notas</string>
+    <string name="Codigo_cad_cliente">Código: </string>
+    <string name="Nome_cad_cliente">Nome: </string>
+    <string name="Endereço_cad_cliente">Endereço: </string>
+    <string name="Cidade_cad_cliente">Cidade: </string>
+    <string name="btsalvar">Salvar</string>
+    <string name="btcancelar">Cancelar</string>
 </resources>
