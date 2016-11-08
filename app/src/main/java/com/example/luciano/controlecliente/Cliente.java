@@ -2,10 +2,12 @@ package com.example.luciano.controlecliente;
 
 import com.orm.SugarRecord;
 
+import java.io.Serializable;
+
 /**
  * Created by Luciano on 07/11/2016.
  */
-public class Cliente extends SugarRecord{
+public class Cliente extends SugarRecord implements Serializable{
 
     private long _id;
     private long Codigo;
@@ -58,6 +60,6 @@ public class Cliente extends SugarRecord{
 
     @Override
     public String toString() {
-        return "Código:  "+this.Codigo+" Nome: "+this.Nome;
+        return ""+this.Codigo+"     "+this.Nome;
     }
 }

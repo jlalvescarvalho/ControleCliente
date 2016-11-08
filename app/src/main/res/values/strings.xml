@@ -8,4 +8,6 @@
     <string name="Cidade_cad_cliente">Cidade: </string>
     <string name="btsalvar">Salvar</string>
     <string name="btcancelar">Cancelar</string>
+    <string name="btalterar">Alterar</string>
+    <string name="btexcluir">Excluir</string>
 </resources>

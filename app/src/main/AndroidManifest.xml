@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".CrudCliente" />
-        <activity android:name=".CadastroCliente"></activity>
+        <activity android:name=".CadastroCliente" />
+        <activity android:name=".Alterar_Cliente"></activity>
     </application>
 
 </manifest>
