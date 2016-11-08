@@ -20,6 +20,7 @@ import java.util.List;
 public class Alterar_Cliente extends AppCompatActivity {
 
     private Cliente cliente;
+    private String posicao;
 
     private EditText nome;
     private EditText endereco;
@@ -43,6 +44,10 @@ public class Alterar_Cliente extends AppCompatActivity {
             cliente =(Cliente) bundle.getSerializable("cliente");
         }
 
+        Bundle bundles = getIntent().getExtras();
+        if(bundles != null && bundles.containsKey("posicao")){
+            posicao = (String) bundles.getSerializable("posicao");
+        }
 
         codigo = (TextView) findViewById(R.id.txtCodigo_alt);
         nome = (EditText) findViewById(R.id.edtNome_alt);
@@ -83,7 +88,7 @@ public class Alterar_Cliente extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 try {
-                    Cliente c = Cliente.findById(Cliente.class, cliente.get_id());
+                    Cliente c = Cliente.findById(Cliente.class, Integer.parseInt(posicao));
 
                     c.setCodigo(Long.parseLong(codigo.getText().toString()));
                     c.setNome(nome.getText().toString());
@@ -106,7 +111,7 @@ public class Alterar_Cliente extends AppCompatActivity {
         Excluir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Cliente c = Cliente.findById(Cliente.class, cliente.get_id());
+                Cliente c = Cliente.findById(Cliente.class, Integer.parseInt(posicao));
                 c.delete();
 
                 Intent it = new Intent(Alterar_Cliente.this, CrudCliente.class);

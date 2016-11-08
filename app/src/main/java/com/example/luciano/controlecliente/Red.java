@@ -7,18 +7,18 @@ import com.orm.SugarRecord;
  */
 public class Red extends SugarRecord{
 
-    private long _id;
     private double nota;
+    private long id_Cliente;
 
     public Red() {
     }
 
-    public long get_id() {
-        return _id;
+    public long getId_Cliente() {
+        return id_Cliente;
     }
 
-    public void set_id(long _id) {
-        this._id = _id;
+    public void setId_Cliente(long id_Cliente) {
+        this.id_Cliente = id_Cliente;
     }
 
     public double getNota() {

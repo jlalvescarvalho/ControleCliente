@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
     private Button btNotas;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -23,6 +23,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent it = new Intent(MainActivity.this, CrudCliente.class);
+                startActivity(it);
+            }
+        });
+
+        btNotas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it = new Intent(MainActivity.this, NotaCliente.class);
                 startActivity(it);
             }
         });

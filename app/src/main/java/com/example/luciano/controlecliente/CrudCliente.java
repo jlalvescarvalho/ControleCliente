@@ -66,6 +66,7 @@ public class CrudCliente extends AppCompatActivity implements AdapterView.OnItem
 
         Intent it = new Intent(this, Alterar_Cliente.class);
         it.putExtra("cliente", c);
+        it.putExtra("posicao", lista.get(i).getId().toString());
         startActivity(it);
 
 

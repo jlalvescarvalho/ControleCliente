@@ -10,4 +10,10 @@
     <string name="btcancelar">Cancelar</string>
     <string name="btalterar">Alterar</string>
     <string name="btexcluir">Excluir</string>
+    <string name="btauditar">Auditar</string>
+    <string name="btsalvar_nota">Salvar</string>
+    <string name="btalterar_nota">Alterar</string>
+    <string name="btcancelar_nota">Cancelar</string>
+    <string name="txtCliente_nota">Cliente</string>
+    <string name="txtNota_nota">Nota: </string>
 </resources>

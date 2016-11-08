@@ -34,4 +34,16 @@
             android:id="@+id/btNota" />
     </LinearLayout>
 
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp" >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/btauditar"
+            android:id="@+id/button" />
+    </LinearLayout>
+
 </LinearLayout>

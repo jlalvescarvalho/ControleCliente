@@ -9,21 +9,12 @@ import java.io.Serializable;
  */
 public class Cliente extends SugarRecord implements Serializable{
 
-    private long _id;
     private long Codigo;
     private String Nome;
     private String Endereco;
     private String Cidade;
 
     public Cliente() {
-    }
-
-    public long get_id() {
-        return _id;
-    }
-
-    public void set_id(long _id) {
-        this._id = _id;
     }
 
     public long getCodigo() {
